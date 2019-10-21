@@ -7,6 +7,8 @@ gem 'pundit'
 
 gem 'devise'
 
+gem 'gravatar_image_tag'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
