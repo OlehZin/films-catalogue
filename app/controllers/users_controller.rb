@@ -5,32 +5,38 @@ class UsersController < ApplicationController
     def index
         @users = User.all
         authorize @users
+
+    end
+
+    def active_user
+        @user = User.find(params[:id])
+        @user.toggle(:active)
+        authorize @user
     end
     
     def show
-        @users = User.find(params[id])
+        @user = User.find(params[id])
         authorize @users
     end
     
     def  edit
         @users = User.find(params[id])
-        authorize @users   
+        authorize @user  
     end
 
     def update
-        @users = User.find(params[id])
+        @user = User.find(params[id])
          redirect_to @user if @user.update_attributes(user_params)
     end
 
     def destroy 
-        @users = User.find(params[id]).deactivete if current_user.admin?
-        @users = User.find(params[id]).destroy if current_user==@user
+    
     end
 
     private
 
     def user_params
-        params.require(:user).permit(:email)
+        params.require(:user).permit(:email, :nickname, :avatar)
     end
 end
 

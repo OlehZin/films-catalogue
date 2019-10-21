@@ -4,4 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
          enum role: %i[admin customer]
+
+  has_many :reviews
+
+  has_one_attached :avatar
+     
 end

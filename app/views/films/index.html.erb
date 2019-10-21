@@ -1,2 +1,15 @@
-<h1>Hello film catalogue!</h1>
-<%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+
+
+
+<div class="main">
+        <h1>Welcome to film catalogue!</h1>
+          <h2>Watch your favorite movies, instantly.</h2>
+          <a class="btn btn-default" href="#">Learn More</a>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="search" placeholder="Browse the collection">
+            </div>
+            <button type="submit" class="btn btn-submit">Search</button>
+          </form> 
+          <%= link_to "Log Out", destroy_user_session_path, method: :delete %> 
+        </div>
