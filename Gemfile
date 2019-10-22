@@ -9,6 +9,9 @@ gem 'devise'
 
 gem 'gravatar_image_tag'
 
+gem 'r_creds', '~> 1.0'
+
+gem 'rest-client', '~> 2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'

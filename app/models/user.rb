@@ -8,5 +8,8 @@ class User < ApplicationRecord
   has_many :reviews
 
   has_one_attached :avatar
+
+  validates :first_name, :last_name, presence: :true
+  validates :first_name, :last_name, uniqueness: true
      
 end
