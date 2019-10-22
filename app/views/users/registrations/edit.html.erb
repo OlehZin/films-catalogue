@@ -41,3 +41,15 @@
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+
+<div class="col-sm-4">
+<% if resourse.avatar.attached? %>
+  <%= image_tag resourse.avatar.variant(resize: "120x120!"), class: "rounded-top" %>
+  <% else %>
+  <%= image_tag gravatar_image_url(current_user.email, size: 120), height: 120, width: 120, class: class: "rounded-top" %>
+  <% end %>
+  </div>
+  
+<div class="col-sm-8"
+<%= f.text_field :avatar %>
+</div 

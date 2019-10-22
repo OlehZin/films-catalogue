@@ -2,7 +2,7 @@ class OmdbClient
     include Singletone 
 
     def initialize
-        @api_key = RCreds.fetch(:omdb, :api_key) #else only 'key'
+        @api_key = 'a3d8a758' #possible variant RCreds.fetch(:omdb, :api_key) 
         @root_url = 'http://www.omdbapi.com'
     end
   

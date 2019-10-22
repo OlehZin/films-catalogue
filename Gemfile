@@ -9,7 +9,13 @@ gem 'devise'
 
 gem 'gravatar_image_tag'
 
-gem 'r_creds', '~> 1.0'
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'jquery-rails'
+
+gem 'mini_magick'
+
+#gem 'r_creds', '~> 1.0'
 
 gem 'rest-client', '~> 2.1'
 

@@ -29,5 +29,3 @@ end
 #def create 
 #Review.new(review_params)
 #Film.find_by params[imdb_id]
-find film by imdb_id
-if movie 
